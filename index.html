@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightOwlStudios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', Arial, sans-serif;
+    background: linear-gradient(135deg, #00c6fb, #005bea);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.top-bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: left;
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Ensure there's padding around content */
+    width: 100%; /* Full width for smaller screens */
+}
+
+p.tagline {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 150px;
+    margin: 0;
+    line-height: 0.9;
+}
+
+h1 span {
+    display: block;
+}
+
+p.description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column; /* Stack logo and nav-link vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 20px; /* Reduce logo text size */
+        margin-bottom: 10px; /* Space between logo and nav */
+    }
+
+    .logo img {
+        width: 30px; /* Adjust logo size on mobile */
+        margin-right: 8px;
+    }
+
+    .nav-link {
+        font-size: 14px; /* Smaller font for the nav link */
+    }
+
+    h1 {
+        font-size: 80px; /* Smaller heading on mobile */
+    }
+
+    p.tagline {
+        font-size: 18px; /* Slightly smaller tagline text */
+    }
+
+    p.description {
+        font-size: 14px; /* Smaller description text */
+        max-width: 100%; /* Make sure description fits on smaller screens */
+    }
+
+    .footer {
+        font-size: 12px; /* Adjust footer font size */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="NightOwlStudios Logo"> <!-- Logo image added here -->
+            NightOwlStudios
+        </div>
+        <a href="#" class="nav-link">Home</a>
+    </div>
+
+    <div class="content">
+        <p class="tagline">We're almost there!</p>
+        <h1>
+            <span>Coming</span>
+            <span>Soon</span>
+        </h1>
+        <p class="description">NightOwlStudios is an upcoming CG & VFX Post Production Studio based in India</p>
+    </div>
+
+    <div class="footer">© 2025 by NightOwlStudios</div>
+</body>
+</html>
