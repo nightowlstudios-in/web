@@ -61,6 +61,11 @@ body {
     font-size: 16px;
     text-decoration: none;
     color: white;
+    margin-right: 15px; /* Spacing between links */
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* No margin for the last link */
 }
 
 .nav-link:hover {
@@ -150,13 +155,17 @@ p.description {
 </head>
 <body>
     <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="logo">
-            <img src="assets/logo.png" alt="NightOwlStudios Logo"> <!-- Logo image added here -->
-            NightOwlStudios
-        </div>
-        <a href="#" class="nav-link">Home</a>
-    </div>
+	<div class="top-bar">
+		<div class="logo">
+			<img src="assets/logo.png" alt="NightOwlStudios Logo">
+			NightOwlStudios
+		</div>
+		<div class="nav-links">
+			<a href="#" class="nav-link">Home</a>
+			<a href="https://internshala.com/internship/details/3d-generalist-internship-in-multiple-locations-at-nightowlstudios1735303039" class="nav-link" target="_blank">Careers</a>
+		</div>
+	</div>
+
 
     <div class="content">
         <p class="tagline">We're almost there!</p>
